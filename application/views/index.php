@@ -1,18 +1,3 @@
-<!doctype html>
-<html lang="es">
-	<head>
-		<title>Home</title>
-		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0; maxium-scale=1.0, minium-scale=1.0">
-		<link rel="stylesheet" href="/css/bootstrap.min.css">
-		<link rel="stylesheet" href="/css/style.css">
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<script type="text/javascript">
-			document.oncontextmenu = function(){return false;}
-		   </script>
-	</head>
-	 <div class="container">
-	 	<body>
 			<header>
 				<section class="main row">
 					<section id="Top" class="col-xs-12">
@@ -47,12 +32,4 @@
 							<img src="./images/Proximamente.jpg" class="img-responsive">
 							<br>
 						</article>
-				</section>
-				<script scr="./js/jQuery.js"></script>
-				<script scr="./js/bootstrap.min.js"></script>
-		</body>
-		<footer class="col-xs-12">
-			Diseñada por <a href="https://www.facebook.com/Yorch.Computacion">Yorch Computación</a>
-		</footer>
-	</div>
-</html>
+					</section>

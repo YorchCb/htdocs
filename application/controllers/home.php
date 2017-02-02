@@ -4,7 +4,6 @@
 		public function index (){
 			$this->load->view('./plantillas/header');
 			$this->load->view('index');
-			$this->load->view('./plantillas/endbody');
 			$this->load->view('./plantillas/footer');
 		}
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home</title>
+	<title><?php $titulo?></title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0; maxium-scale=1.0, minium-scale=1.0">
 	<link rel="stylesheet" href="/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/css/style.css">
@@ -10,8 +10,6 @@
 	<script type="text/javascript">
 		document.oncontextmenu = function(){return false;}
 	</script>
-	<title></title>
 </head>
-<body>
-</body>
-</html>
+	 <div class="container">
+	 	<body>
