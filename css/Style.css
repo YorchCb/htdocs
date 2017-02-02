@@ -1,0 +1,75 @@
+body {
+	background-color:#999999;
+}
+footer, #Menu {
+	background-color:#CCCCCC;
+	text-align: center;
+	font-size: large;
+}
+
+h1{
+	background-color:#CCCCCC;
+}
+
+h2{
+	text-align: center;
+	font-size: large;
+}
+
+h3{
+	display: inline-block;
+}
+
+h4{
+	text-align: center;
+	font-size: large;
+}
+
+h5{
+	display:inline-block;
+}
+
+div.menuR {
+	text-align: right;
+	font-size: large;
+}
+#open_close{
+	background: #000;
+	font-size: medium;
+	color: #fff;
+	border-style: solid;
+
+}
+
+#fuente{
+	text-align: center;
+	font-size: medium;
+}
+
+#albumes{
+	margin-top:20px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    height: 170px;
+    white-space:nowrap;
+    display: inline-block;
+}
+
+#fotos-albumes, #miniaturas{
+	margin-top: 20px;
+	height: 480px;
+	overflow: auto;
+}
+
+#visor{
+	margin-top: 20px;
+}
+
+{
+	margin-top: 20px;
+	overflow-x: scroll;
+    overflow-y: hidden;
+    height: 120px;
+    white-space:nowrap;
+    display: inline-block;
+}
