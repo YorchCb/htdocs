@@ -9,7 +9,7 @@ unset($_SESSION['userData']);
 $facebook->destroySession();
 
 //Redirect to homepage
-$Redirect_page = 'http://localhost/?action=home';
+$Redirect_page = 'http://localhost/';
 header("Location: ".$Redirect_page);
 
 ?>
