@@ -23,6 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$data['titulo'] = 'Gta V';
 
 			$this->load->view('./plantillas/head', $data);
+			$this->load->view('./plantillas/header');
 			$this->load->view('/gtav/index');
 			$this->load->view('./plantillas/footer');
 	}
@@ -31,6 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$data['titulo'] = 'Galería multimédia Gta V';
 
 			$this->load->view('./plantillas/head', $data);
+			$this->load->view('./plantillas/header');
 			$this->load->view("/gtav/galeria");
 			$this->load->view('./plantillas/footer');
 		}
