@@ -22,9 +22,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		public function index (){
 			$data['titulo'] = 'Battlefield 1';
 
-			$this->load->view('./Plantillas/header', $data);
+			$this->load->view('./plantillas/head', $data);
 			$this->load->view('/bt1/index');
-			$this->load->view('./Plantillas/footer');
+			$this->load->view('./plantillas/footer');
 		}
 
 		
