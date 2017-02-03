@@ -17,15 +17,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	class main extends CI_controller{
+	class gtav extends CI_controller{
 
 		public function index (){
-			$data['titulo'] = 'Home';
+			$data['titulo'] = 'Gta V';
 
 			$this->load->view('./Plantillas/header', $data);
-			$this->load->view('index');
+			$this->load->view('/gtav/index');
+			$this->load->view('./Plantillas/footer');
+	}
+
+		public function galeria(){
+			$data['titulo'] = 'Galería multimédia Gta V';
+
+			$this->load->view('./Plantillas/header', $data);
+			$this->load->view("/gtav/galeria");
 			$this->load->view('./Plantillas/footer');
 		}
-
-		
 }

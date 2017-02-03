@@ -26,7 +26,7 @@
 						</div >
 						<div id="Galeria" class="col-xs-12 col-sm- col-md- col-lg-6">
 							<h2>
-								Galería multimedia <a href="./?action=galeriagtav">(ver completa)</a>
+								Galería multimedia <a href=" <?php echo base_url();?>gtav/galeria">(ver completa)</a>
 							</h2>
 							<h3>
 								<div id="fuente"><b>Fotos</b>
@@ -65,5 +65,4 @@
 						<div class="col-xs-3 col-sm- col-md-3 col-lg-">
 							Publicidad
 						</div >
-						<?php include 'includes/endbody.html'; ?>
 				</section>

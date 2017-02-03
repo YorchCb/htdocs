@@ -17,13 +17,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	class main extends CI_controller{
+	class bt1 extends CI_controller{
 
 		public function index (){
-			$data['titulo'] = 'Home';
+			$data['titulo'] = 'Battlefield 1';
 
 			$this->load->view('./Plantillas/header', $data);
-			$this->load->view('index');
+			$this->load->view('/bt1/index');
 			$this->load->view('./Plantillas/footer');
 		}
 

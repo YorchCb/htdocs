@@ -1,5 +1,5 @@
 					<!-- Inicio QS -->
-						<a href="#qs" class="btn" data-toggle="modal"> ¿Quiénes somos? </a>
+						<a href="#qs" data-toggle="modal"> ¿Quiénes somos? </a>
 						<div class="modal fade" id='qs'> 
 							<div class="modal-dialog">
 								<div class="modal-content">
