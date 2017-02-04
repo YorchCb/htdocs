@@ -30,13 +30,33 @@ if(!$fbUser){
 	
 	//Put user data into session
 	$_SESSION['userData'] = $userData;
-	
+
+	//Pregunta si esta baneado
 	if (!empty ($userData) && $userData['ban'] == '1') {
 		echo '<script language="javascript">alert("Fuiste baneado");</script>';
 		unset($_SESSION['userData']);
 		$facebook->destroySession();
 	}else{
+		//Pregunta si se inicio sesion
+		if(!empty($userData)){ 
+			//Pregunta si es admin
+			if (!empty ($userData) && $userData['rango'] == '1') {
 
+				echo '<a href="./app/logout.php">Desloguear</a> / <a href="./?action=">Panel</a>'; 
+			}else{
+        	echo '<a href="./app/logout.php">Desloguear</a> / <a href="./?action=">Panel de usuario</a>'; 
+		}}else{
+			echo '<h3 style="color:red">Un problema ocurrio, por favor intente de nuevo.</h3>';
+				}
+							}
+														}
+/*
+
+if (!empty ($userData) && $userData['ban'] == '1') {
+		echo '<script language="javascript">alert("Fuiste baneado");</script>';
+		unset($_SESSION['userData']);
+		$facebook->destroySession();
+	}else{
 	if(!empty($userData)){
         echo '<a href="./app/logout.php">Desloguear</a> / <a href="./?action=">Panel de usuario</a>'; 
 	}else{
@@ -44,4 +64,8 @@ if(!$fbUser){
 	}
 		}
 }
+
+*/
 ?>
+
+
