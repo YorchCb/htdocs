@@ -2,7 +2,7 @@
 				<section class="main row">
 					<section id="Top" class="col-xs-12">
 						<h1>
-							<img src="/images/GtavLogo.png" class="img-responsive" >
+							<img src="<?php echo base_url(); ?>images/GtavLogo.png" class="img-responsive" style='width:145px; height:135px;' >
 							<div class="menuR"><a href="index2.php">Login</a></div>
 						</h1>	
 					</section>

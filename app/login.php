@@ -31,11 +31,17 @@ if(!$fbUser){
 	//Put user data into session
 	$_SESSION['userData'] = $userData;
 	
+	if (!empty ($userData) && $userData['ban'] == '1') {
+		echo '<script language="javascript">alert("Fuiste baneado");</script>';
+		unset($_SESSION['userData']);
+		$facebook->destroySession();
+	}else{
 
 	if(!empty($userData)){
-        echo '<a href="./?action=logout">Desloguear</a> / <a href="./?action=">Panel de usuario</a>'; 
+        echo '<a href="./app/logout.php">Desloguear</a> / <a href="./?action=">Panel de usuario</a>'; 
 	}else{
 		echo '<h3 style="color:red">Un problema ocurrio, por favor intente de nuevo.</h3>';
 	}
+		}
 }
 ?>
