@@ -3,7 +3,7 @@
 	hola
 </div>
 <div id="visualizacion" class="col-xs-8">
-	<img src="<?php echo base_url(); ?>images/galeria.png">
+	<img src="<?php echo base_url(); ?>images/galeria.png" class="img-responsive">
 </div>
 <div id="imagenes" class="col-xs-4">
 	hola
