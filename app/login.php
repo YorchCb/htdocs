@@ -7,7 +7,7 @@ require_once 'User.php';
 if(!$fbUser){
 	$fbUser = NULL;
 	$loginURL = $facebook->getLoginUrl(array('redirect_uri'=>$redirectURL,'scope'=>$fbPermissions));
-	echo '  / <a href="'.$loginURL.'">Logearse</a>'; 	
+	echo '  / <a href="'.$loginURL.'">Logearse</a> / '; 	
 }else{
 	//Get user profile data from facebook
 	$fbUserProfile = $facebook->api('/me?fields=id,first_name,last_name,email,link,gender,locale,picture');
@@ -43,9 +43,9 @@ if(!$fbUser){
 			//Pregunta si es admin
 			if (!empty ($userData) && $userData['rango'] == '1') {
 
-				echo '<a href="./app/logout.php">Desloguear</a> / <a href=" <a href="/panel/admin">Panel de admistrador</a>'; 
+				echo ' / <a href="./app/logout.php">Desloguear</a> / <a href="/panel/admin">Panel de admistrador</a>'; 
 			}else{
-        	echo '<a href="./app/logout.php">Desloguear</a> / <a href="panel/panel_control">Panel de usuario</a>'; 
+        	echo ' / <a href="./app/logout.php">Desloguear</a> / <a href="panel/panel_control">Panel de usuario</a>'; 
 		}}else{
 			echo '<h3 style="color:red">Un problema ocurrio, por favor intente de nuevo.</h3>';
 				}
