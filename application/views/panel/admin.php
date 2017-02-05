@@ -1,24 +1,13 @@
 <?php
-/*
-include 'plantillas/checkAdmin.php';
-*/
 
-$hostname='localhost';
-$username='root';
-$password='';
-$batabase='eventos_coordinados';
-
-$conexion= new mysqli($hostname, $username, $password, $batabase);
-
-$usuarios="SELECT * FROM users";
-$resUsers=$conexion->query($usuarios);
+include 'config.php';
 ?>
 <!--
 <script type="text/javascript">
   setTimeout("location.reload()", 1);
 </script>
 //-->
-<table id="usuarios" class="table">
+<table class="table">
 	<tr>
 		<th>ID</th>
 		<th>Foto</th>
