@@ -20,13 +20,11 @@ include 'config.php';
 		while($registro = $resUsers ->fetch_array(MYSQLI_BOTH)) {
 			echo'
 				<tr>
-					<td>
-						'.$registro['id'].'
-						'.$registro['picture'].'
-						'.$registro['first_name'].'
-						'.$registro['rango'].'
-						'.$registro['ban'].'
-					</td>
+					<td>'.$registro['id'].'</td>
+					<td>'.$registro['picture'].'</td>
+					<td>'.$registro['first_name'].'</td>
+					<td>'.$registro['rango'].'</td>
+					<td>'.$registro['ban'].'</td>
 				</tr>';
 		}
 
