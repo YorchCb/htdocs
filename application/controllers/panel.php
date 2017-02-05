@@ -17,14 +17,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
 
-	class main extends CI_controller{
+	class panel extends CI_controller{
 
-		public function index (){
-			$data['titulo'] = 'Home';
+
+		public function panel_control(){
+			$data['titulo'] = 'Panel de control';
 
 			$this->load->view('./plantillas/head', $data);
-			$this->load->view('index');
+			$this->load->view("./panel/panel_control");
 			$this->load->view('./plantillas/footer');
 		}
 
+		public function admin(){
+			$data['titulo'] = 'Panel de administrador';
+
+			$this->load->view('./plantillas/head', $data);
+			$this->load->view("./panel/admin");
+			$this->load->view('./plantillas/footer');
+		}
 }

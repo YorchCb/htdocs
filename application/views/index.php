@@ -9,7 +9,7 @@
 						<?php include 'plantillas/qs.php'; ?> / 
 						<a href="https://www.youtube.com" target="_blank"> Lista de eventos </a> /
 						<a href="https://www.youtube.com" target="_blank"> YouTube </a> /
-						<a href="./"> RazerComms </a> /
+						<a href="./"> RazerComms </a>
 						<?php include './app/login.php'; ?>
 					</section>
 				</section>
