@@ -1,13 +1,15 @@
 <?php
 	include 'config.php';
 ?>
-<div>
+<div class="col-xs-12">
+	<br>
 	<center>Eventos de Battlefield 1</center>	
+	<br>
 	<form method="post">
 		<table class="table">
 			<tr>
 				<th>Nombre del evento</th>
-				<th>FotoCreador</th>
+				<th>Foto del Creador</th>
 				<th>Creador</th>
 				<th>Hora</th>
 				<th>Fecha</th>

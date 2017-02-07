@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$data['titulo'] = 'Lista de eventos';
 
 			$this->load->view('./plantillas/head', $data);
-			$this->load->view('./plantillas/config');
+			$this->load->view('eventos');
 			$this->load->view('./plantillas/eventosgtav');
 			$this->load->view('./plantillas/eventosbt1');
 			$this->load->view('./plantillas/eventosbt4');
