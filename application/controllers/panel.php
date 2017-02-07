@@ -32,6 +32,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$data['titulo'] = 'Panel de administrador';
 
 			$this->load->view('./plantillas/head', $data);
+			$this->load->view('config', $data);
 			$this->load->view("./panel/admin");
 			$this->load->view('./plantillas/footer');
 		}
