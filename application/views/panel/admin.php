@@ -6,8 +6,7 @@
 <script type="text/javascript">
   setTimeout("location.reload()", 3600);
 </script>
-
-
+<a href="/main">Volver a home</a>
 <h4 style="text-align: center;">Usuarios</h4>
 	<form method="post">
 		<table class="table">

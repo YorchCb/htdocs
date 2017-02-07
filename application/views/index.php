@@ -7,7 +7,7 @@
 					</section>
 					<section id="Menu" class="col-xs-12">
 						<?php include 'plantillas/qs.php'; ?> / 
-						<a href="https://www.youtube.com" target="_blank"> Lista de eventos </a> /
+						<a href="/main/eventos"> Lista de eventos </a> /
 						<a href="https://www.youtube.com" target="_blank"> YouTube </a> /
 						<a href="./"> RazerComms </a>
 						<?php include './app/login.php'; ?>
@@ -33,3 +33,18 @@
 							<br>
 						</article>
 					</section>
+<!--	
+	<?php
+		$output = '<h1>Facebook Profile Details </h1>';
+		$output .= '<img src="'.$userData['picture'].'">';
+        $output .= '<br/>Facebook ID : ' . $userData['oauth_uid'];
+        $output .= '<br/>Name : ' . $userData['first_name'].' '.$userData['last_name'];
+        $output .= '<br/>Email : ' . $userData['email'];
+        $output .= '<br/>Gender : ' . $userData['gender'];
+        $output .= '<br/>Locale : ' . $userData['locale'];
+        $output .= '<br/>Logged in with : Facebook';
+
+
+						 echo $output;
+?>
+-->

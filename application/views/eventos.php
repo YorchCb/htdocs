@@ -3,4 +3,5 @@
 </script>
 <div class="col-xs-12">
 	<h4>Lista de eventos</h4>
+	<a href="/main">Volver a home</a>
 </div>
