@@ -34,7 +34,7 @@ if(!$fbUser){
 
 	//Pregunta si esta baneado
 	if (!empty ($userData) && $userData['ban'] == '1') {
-		echo '<script language="javascript">alert("Fuiste baneado");</script>';
+		echo '<script language="javascript">alert("Llamada para ELBA NEADO");</script>';
 		unset($_SESSION['userData']);
 		$facebook->destroySession();
 	}else{
